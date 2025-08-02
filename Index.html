@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Formulario  FINAL</title>
+</head>
+<body>
+    <h1 id="title">FROMULARIO SENA V1</h1>
+    <form id="survey-form">
+        <label id="name-label"
+          >Nombre<input
+            id="name"
+            type="text"
+            placeholder="Por favor ingresa tu nombre"
+            required
+        /></label>
+        <label id="email-label"
+          >Correo<input
+            id="email"
+            type="email"
+            placeholder="Por favor ingresa tu correo"
+            required
+        /></label>
+        <label id="number-label"
+          >Edad<input
+            id="number"
+            type="number"
+            min="15"
+            max="80"
+            placeholder="Por favor ingresa tu edad"
+            required
+        /></label>
+        <label for="dropdown"
+          >Elige una opcion
+          <select id="dropdown">
+            <option value=" ">Selecciona una opcion</option>
+            <option value="option1">Opcion 1</option>
+            <option value="option2">Opcion 2</option>
+            <option value="option3">Opcion 3</option>
+          </select>
+        </label>
+        <label id="radio-buttons">
+          Cual es tu plan para comprar un carro en 5 años
+
+          <label
+            ><input class="inline" name="account-type" type="radio" value="SI" />SI</label
+          >
+          <label
+            ><input class="inline" name="account-type" type="radio" value="No" />No</label
+          >
+          <label
+            ><input
+              class="inline"
+              name="account-type"
+              type="radio"
+              value="maybe"
+            />Otro</label
+          >
+        </label>
+        <label id="brands" for="dropdown"
+          >Cual es tu marca de carro favorita?
+          <select id="dropdown">
+            <option value="">Selecciona un opcion</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Renault">Renault</option>
+          </select>
+        </label>
+
+        <label for="dropdown"
+          >Que tipo de transporte utilizas?
+          <label><input class="inline" value="car" type="checkbox" />Car</label>
+          <label
+            ><input
+              class="inline"
+              type="checkbox"
+              id="vehicle3"
+              name="Barco"
+              value="Barco"
+            />Barco</label
+          >
+          <label
+            ><input
+              class="inline"
+              type="checkbox"
+              id="vehicle4"
+              name="Biciclelta"
+              value="Biciclelta"
+            />Biciclelta</label
+          >
+          <label
+            ><input
+              class="inline"
+              type="checkbox"
+              id="vehicle5"
+              name="Moto"
+              value="Moto"
+            />Moto</label
+          >
+          <label
+            ><input
+              class="inline"
+              type="checkbox"
+              id="vehicle6"
+              name="Avion"
+              value="Avion"
+            />Avion</label>
+        <label
+          >Escribe una recomendacion
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Por favor escribe una recomendacion"
+          ></textarea>
+        </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>
